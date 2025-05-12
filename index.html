@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="flex-wrapper">
+
+            <div id="home">
+
+
+                <h3 class="label-centre">HOME</h3>
+                <div class="score-box">
+                    <p id="home-score">0</p>
+                </div>
+                <div class="increment-btn-wrapper">
+                    <button id="incrment-by-one" onclick="increaseHomeByOne()" class="increment-button">+1</button>
+                    <button id="incrment-by-two" onclick="increaseHomeByTwo()" class="increment-button">+2</button>
+                    <button id="incrment-by-three" onclick="increaseHomeByThree()" class="increment-button">+3</button>
+                </div>
+            </div>
+            <div id="guest">
+                <h3 class="label-centre">GUEST</h3>
+                <div class="score-box">
+                    <p id="guest-score">0</p>
+                </div>
+                <div class="increment-btn-wrapper">
+                    <button id="incrment-by-one" onclick="increaseGuestByOne()" class="increment-button">+1</button>
+                    <button id="incrment-by-two" onclick="increaseGuestByTwo()" class="increment-button">+2</button>
+                    <button id="incrment-by-three" onclick="increaseGuestByThree()" class="increment-button">+3</button>
+                </div>
+            </div>
+        </div>
+        <fieldset class="timer-wrapper">
+             <legend>Timer Section</legend>
+            <button class="timer-button" onclick="startTimer()">Start</button>
+            <h2 id="timer" >0</h2>
+            <button class="timer-button" onclick="stopTimer()">Stop</button>
+            <button class="timer-button" onclick="resetTimer()">Reset</button>
+        </fieldset>
+       
+    </div>
+   
+        
+
+            <script src="index.js"></script>
+</body>
+
+</html>
